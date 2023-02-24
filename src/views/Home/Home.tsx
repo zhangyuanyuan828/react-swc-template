@@ -1,9 +1,14 @@
 import reactLogo from '@/assets/react.svg'
+import { Button } from '@/components'
 import { useStores } from '@/stores'
 import { observer } from 'mobx-react-lite'
+import { useState } from 'react'
+import { MdSend } from 'react-icons/md'
 
 export const Home = observer(function Home() {
   const { appStore } = useStores()
+  const [disabled, setDisabled] = useState(false)
+  const [loading, setLoading] = useState(false)
 
   return (
     <div className="flex h-screen w-screen flex-col items-center justify-center">
@@ -20,17 +25,93 @@ export const Home = observer(function Home() {
         </a>
       </div>
       <h1 className="my-4 text-5xl leading-tight">Vite + React</h1>
+      <div className="flex gap-4">
+        <label>
+          <input type="checkbox" checked={disabled} onChange={(event) => setDisabled(event.target.checked)} />
+          <span className="select-none">Disabled</span>
+        </label>
+        <label>
+          <input type="checkbox" checked={loading} onChange={(event) => setLoading(event.target.checked)} />
+          <span className="select-none">Loading</span>
+        </label>
+      </div>
       <div className="p-8 text-center">
-        <button
-          type="button"
-          className="rounded border-blue-600 bg-blue-600 px-4 py-2 text-white outline-none transition-colors duration-300 hover:border-blue-500 hover:bg-blue-500 focus:border-blue-700 focus:bg-blue-700 focus-visible:outline-blue-700"
-          onClick={() => appStore.increase()}>
-          count is {appStore.count}
-        </button>
+        <table className="border-collapse">
+          <thead>
+            <tr>
+              <th className="py-1 px-2" rowSpan={2}>
+                colorTheme
+              </th>
+              <th className="py-1 px-2" colSpan={3}>
+                size
+              </th>
+              <th className="py-1 px-2" colSpan={4}>
+                variant
+              </th>
+            </tr>
+            <tr>
+              <th className="py-1 px-2">small</th>
+              <th className="py-1 px-2">normal</th>
+              <th className="py-1 px-2">large</th>
+              <th className="py-1 px-2">contained</th>
+              <th className="py-1 px-2">outlined</th>
+              <th className="py-1 px-2">text</th>
+              <th className="py-1 px-2">link</th>
+            </tr>
+          </thead>
+          <tbody>
+            {(['blue', 'red', 'orange', 'yellow', 'green', 'slate', 'teal', 'sky', 'pink', 'gray'] as const).map((color) => (
+              <tr key={color}>
+                <td className="py-1 px-2">
+                  <Button colorScheme={color} disabled={disabled} loading={loading}>
+                    {color}
+                  </Button>
+                </td>
+                <td className="py-1 px-2">
+                  <Button colorScheme={color} size="small" disabled={disabled} loading={loading} startIcon={<MdSend />}>
+                    small
+                  </Button>
+                </td>
+                <td className="py-1 px-2">
+                  <Button colorScheme={color} size="normal" disabled={disabled} loading={loading} endIcon={<MdSend />}>
+                    normal
+                  </Button>
+                </td>
+                <td className="py-1 px-2">
+                  <Button colorScheme={color} size="large" disabled={disabled} loading={loading}>
+                    large
+                  </Button>
+                </td>
+                <td className="py-1 px-2">
+                  <Button colorScheme={color} disabled={disabled} loading={loading}>
+                    contained
+                  </Button>
+                </td>
+                <td className="py-1 px-2">
+                  <Button colorScheme={color} variant="outlined" disabled={disabled} loading={loading}>
+                    outline
+                  </Button>
+                </td>
+                <td className="py-1 px-2">
+                  <Button colorScheme={color} variant="text" disabled={disabled} loading={loading}>
+                    text
+                  </Button>
+                </td>
+                <td className="py-1 px-2">
+                  <Button colorScheme={color} variant="link" disabled={disabled} loading={loading}>
+                    link
+                  </Button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <Button onClick={() => appStore.increase()}>count is {appStore.count}</Button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
+      <div>true</div>
       <p className="text-gray-400">Click on the Vite and React logos to learn more</p>
     </div>
   )

@@ -1,0 +1,24 @@
+@keyframes circular-progress-circle {
+  0% {
+    stroke-dasharray: 0px, 200px;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 100px, 200px;
+    stroke-dashoffset: -25px;
+  }
+  100% {
+    stroke-dasharray: 100px, 200px;
+    stroke-dashoffset: -125px;
+  }
+}
+
+.tw-circular-progress {
+  @apply inline-block animate-[spin_1.5s_linear_infinite] text-inherit;
+}
+
+.tw-circular-progress-circle {
+  stroke-dasharray: 80px, 200px;
+  stroke-dashoffset: 0;
+  @apply animate-[circular-progress-circle_1s_ease-in-out_infinite] stroke-current;
+}

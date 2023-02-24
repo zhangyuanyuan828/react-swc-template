@@ -2,7 +2,7 @@
  * @type {import('prettier').Config}
  */
 module.exports = {
-  bracketSameLine: true,
+  bracketSameLine: false,
   printWidth: 160,
   semi: false,
   singleQuote: true,
