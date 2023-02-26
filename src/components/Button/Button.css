@@ -21,180 +21,309 @@
 /* blue */
 
 .tw-button-blue {
-  @apply border-blue-500 bg-blue-500 text-white hover:border-blue-600 hover:bg-blue-600 active:border-blue-700 active:bg-blue-700 disabled:border-blue-500 disabled:bg-blue-500 dark:border-blue-200 dark:bg-blue-200 dark:text-[#101010] dark:hover:border-blue-300 dark:hover:bg-blue-300 dark:active:border-blue-400 dark:active:bg-blue-400 dark:disabled:border-blue-200 dark:disabled:bg-blue-200;
+  @apply border-blue-500 bg-blue-500 text-white dark:border-blue-200 dark:bg-blue-200 dark:text-[#101010];
+  @apply hover:border-blue-600 hover:bg-blue-600 dark:hover:border-blue-300 dark:hover:bg-blue-300;
+  @apply active:border-blue-700 active:bg-blue-700 dark:active:border-blue-400 dark:active:bg-blue-400;
+  @apply disabled:border-blue-500 disabled:bg-blue-500 dark:disabled:border-blue-200 dark:disabled:bg-blue-200;
 }
 
 .tw-button-blue.tw-button-outlined {
-  @apply bg-transparent text-blue-500 hover:bg-blue-100 hover:text-blue-600 active:bg-blue-200 active:text-blue-700 disabled:bg-transparent disabled:text-blue-500 dark:border-blue-200 dark:text-blue-200 dark:hover:border-blue-300 dark:hover:bg-blue-300/[0.1] dark:hover:text-blue-300 dark:active:border-blue-400 dark:active:bg-blue-400/[0.1] dark:active:text-blue-400 dark:disabled:border-blue-200 dark:disabled:bg-blue-200;
+  @apply bg-transparent text-blue-500 dark:text-blue-200;
+  @apply hover:bg-blue-100 hover:text-blue-600 dark:hover:bg-blue-300/[0.1] dark:hover:text-blue-300;
+  @apply active:bg-blue-200 active:text-blue-700 dark:active:bg-blue-400/[0.1] dark:active:text-blue-400;
+  @apply disabled:bg-transparent disabled:text-blue-500 dark:disabled:text-blue-200;
 }
 
 .tw-button-blue.tw-button-text {
-  @apply border-transparent bg-transparent text-blue-500 hover:border-blue-100 hover:bg-blue-100 hover:text-blue-600 active:border-blue-200 active:bg-blue-200 active:text-blue-700 disabled:border-transparent disabled:bg-transparent disabled:text-blue-500;
+  @apply border-transparent bg-transparent text-blue-500 dark:text-blue-200;
+  @apply hover:border-blue-100 hover:bg-blue-100 hover:text-blue-600 dark:hover:border-blue-300/[0.1] dark:hover:bg-blue-300/[0.1] dark:hover:text-blue-300;
+  @apply active:border-blue-200 active:bg-blue-200 active:text-blue-700 dark:active:border-blue-400/[0.1] dark:active:bg-blue-400/[0.1] dark:active:text-blue-400;
+  @apply disabled:border-transparent disabled:bg-transparent disabled:text-blue-500 dark:disabled:text-blue-200;
 }
 
 .tw-button-blue.tw-button-link {
-  @apply border-transparent bg-transparent text-blue-500 hover:text-blue-600 hover:underline active:text-blue-700 disabled:border-transparent disabled:bg-transparent disabled:text-blue-500 disabled:no-underline;
+  @apply border-transparent bg-transparent text-blue-500 dark:text-blue-200;
+  @apply hover:text-blue-600 hover:underline dark:hover:text-blue-300;
+  @apply active:text-blue-700 dark:active:text-blue-400;
+  @apply disabled:text-blue-500 disabled:no-underline dark:disabled:text-blue-200;
+  @apply focus-visible:underline;
 }
 
 /* red */
 
 .tw-button-red {
-  @apply border-red-500 bg-red-500 text-white hover:border-red-600 hover:bg-red-600 active:border-red-700 active:bg-red-700 disabled:border-red-500 disabled:bg-red-500;
+  @apply border-red-500 bg-red-500 text-white dark:border-red-200 dark:bg-red-200 dark:text-[#101010];
+  @apply hover:border-red-600 hover:bg-red-600 dark:hover:border-red-300 dark:hover:bg-red-300;
+  @apply active:border-red-700 active:bg-red-700 dark:active:border-red-400 dark:active:bg-red-400;
+  @apply disabled:border-red-500 disabled:bg-red-500 dark:disabled:border-red-200 dark:disabled:bg-red-200;
 }
 
 .tw-button-red.tw-button-outlined {
-  @apply bg-transparent text-red-500 hover:bg-red-100 hover:text-red-600 active:bg-red-200 active:text-red-700 disabled:bg-transparent disabled:text-red-500;
+  @apply bg-transparent text-red-500 dark:text-red-200;
+  @apply hover:bg-red-100 hover:text-red-600 dark:hover:bg-red-300/[0.1] dark:hover:text-red-300;
+  @apply active:bg-red-200 active:text-red-700 dark:active:bg-red-400/[0.1] dark:active:text-red-400;
+  @apply disabled:bg-transparent disabled:text-red-500 dark:disabled:text-red-200;
 }
 
 .tw-button-red.tw-button-text {
-  @apply border-transparent bg-transparent text-red-500 hover:border-red-100 hover:bg-red-100 hover:text-red-600 active:border-red-200 active:bg-red-200 active:text-red-700 disabled:border-transparent disabled:bg-transparent disabled:text-red-500;
+  @apply border-transparent bg-transparent text-red-500 dark:text-red-200;
+  @apply hover:border-red-100 hover:bg-red-100 hover:text-red-600 dark:hover:border-red-300/[0.1] dark:hover:bg-red-300/[0.1] dark:hover:text-red-300;
+  @apply active:border-red-200 active:bg-red-200 active:text-red-700 dark:active:border-red-400/[0.1] dark:active:bg-red-400/[0.1] dark:active:text-red-400;
+  @apply disabled:border-transparent disabled:bg-transparent disabled:text-red-500 dark:disabled:text-red-200;
 }
 
 .tw-button-red.tw-button-link {
-  @apply border-transparent bg-transparent text-red-500 hover:text-red-600 hover:underline active:text-red-700 disabled:border-transparent disabled:bg-transparent disabled:text-red-500 disabled:no-underline;
+  @apply border-transparent bg-transparent text-red-500 dark:text-red-200;
+  @apply hover:text-red-600 hover:underline dark:hover:text-red-300;
+  @apply active:text-red-700 dark:active:text-red-400;
+  @apply disabled:text-red-500 disabled:no-underline dark:disabled:text-red-200;
+  @apply focus-visible:underline;
 }
 
 /* orange */
 
 .tw-button-orange {
-  @apply border-orange-500 bg-orange-500 text-white hover:border-orange-600 hover:bg-orange-600 active:border-orange-700 active:bg-orange-700 disabled:border-orange-500 disabled:bg-orange-500;
+  @apply border-orange-500 bg-orange-500 text-white dark:border-orange-200 dark:bg-orange-200 dark:text-[#101010];
+  @apply hover:border-orange-600 hover:bg-orange-600 dark:hover:border-orange-300 dark:hover:bg-orange-300;
+  @apply active:border-orange-700 active:bg-orange-700 dark:active:border-orange-400 dark:active:bg-orange-400;
+  @apply disabled:border-orange-500 disabled:bg-orange-500 dark:disabled:border-orange-200 dark:disabled:bg-orange-200;
 }
 
 .tw-button-orange.tw-button-outlined {
-  @apply bg-transparent text-orange-500 hover:bg-orange-100 hover:text-orange-600 active:bg-orange-200 active:text-orange-700 disabled:bg-transparent disabled:text-orange-500;
+  @apply bg-transparent text-orange-500 dark:text-orange-200;
+  @apply hover:bg-orange-100 hover:text-orange-600 dark:hover:bg-orange-300/[0.1] dark:hover:text-orange-300;
+  @apply active:bg-orange-200 active:text-orange-700 dark:active:bg-orange-400/[0.1] dark:active:text-orange-400;
+  @apply disabled:bg-transparent disabled:text-orange-500 dark:disabled:text-orange-200;
 }
 
 .tw-button-orange.tw-button-text {
-  @apply border-transparent bg-transparent text-orange-500 hover:border-orange-100 hover:bg-orange-100 hover:text-orange-600 active:border-orange-200 active:bg-orange-200 active:text-orange-700 disabled:border-transparent disabled:bg-transparent disabled:text-orange-500;
+  @apply border-transparent bg-transparent text-orange-500 dark:text-orange-200;
+  @apply hover:border-orange-100 hover:bg-orange-100 hover:text-orange-600 dark:hover:border-orange-300/[0.1] dark:hover:bg-orange-300/[0.1] dark:hover:text-orange-300;
+  @apply active:border-orange-200 active:bg-orange-200 active:text-orange-700 dark:active:border-orange-400/[0.1] dark:active:bg-orange-400/[0.1] dark:active:text-orange-400;
+  @apply disabled:border-transparent disabled:bg-transparent disabled:text-orange-500 dark:disabled:text-orange-200;
 }
 
 .tw-button-orange.tw-button-link {
-  @apply border-transparent bg-transparent text-orange-500 hover:text-orange-600 hover:underline active:text-orange-700 disabled:border-transparent disabled:bg-transparent disabled:text-orange-500 disabled:no-underline;
+  @apply border-transparent bg-transparent text-orange-500 dark:text-orange-200;
+  @apply hover:text-orange-600 hover:underline dark:hover:text-orange-300;
+  @apply active:text-orange-700 dark:active:text-orange-400;
+  @apply disabled:text-orange-500 disabled:no-underline dark:disabled:text-orange-200;
+  @apply focus-visible:underline;
 }
 
 /* yellow */
 
 .tw-button-yellow {
-  @apply border-yellow-500 bg-yellow-500 text-white hover:border-yellow-600 hover:bg-yellow-600 active:border-yellow-700 active:bg-yellow-700 disabled:border-yellow-500 disabled:bg-yellow-500;
+  @apply border-yellow-500 bg-yellow-500 text-white dark:border-yellow-200 dark:bg-yellow-200 dark:text-[#101010];
+  @apply hover:border-yellow-600 hover:bg-yellow-600 dark:hover:border-yellow-300 dark:hover:bg-yellow-300;
+  @apply active:border-yellow-700 active:bg-yellow-700 dark:active:border-yellow-400 dark:active:bg-yellow-400;
+  @apply disabled:border-yellow-500 disabled:bg-yellow-500 dark:disabled:border-yellow-200 dark:disabled:bg-yellow-200;
 }
 
 .tw-button-yellow.tw-button-outlined {
-  @apply bg-transparent text-yellow-500 hover:bg-yellow-100 hover:text-yellow-600 active:bg-yellow-200 active:text-yellow-700 disabled:bg-transparent disabled:text-yellow-500;
+  @apply bg-transparent text-yellow-500 dark:text-yellow-200;
+  @apply hover:bg-yellow-100 hover:text-yellow-600 dark:hover:bg-yellow-300/[0.1] dark:hover:text-yellow-300;
+  @apply active:bg-yellow-200 active:text-yellow-700 dark:active:bg-yellow-400/[0.1] dark:active:text-yellow-400;
+  @apply disabled:bg-transparent disabled:text-yellow-500 dark:disabled:text-yellow-200;
 }
 
 .tw-button-yellow.tw-button-text {
-  @apply border-transparent bg-transparent text-yellow-500 hover:border-yellow-100 hover:bg-yellow-100 hover:text-yellow-600 active:border-yellow-200 active:bg-yellow-200 active:text-yellow-700 disabled:border-transparent disabled:bg-transparent disabled:text-yellow-500;
+  @apply border-transparent bg-transparent text-yellow-500 dark:text-yellow-200;
+  @apply hover:border-yellow-100 hover:bg-yellow-100 hover:text-yellow-600 dark:hover:border-yellow-300/[0.1] dark:hover:bg-yellow-300/[0.1] dark:hover:text-yellow-300;
+  @apply active:border-yellow-200 active:bg-yellow-200 active:text-yellow-700 dark:active:border-yellow-400/[0.1] dark:active:bg-yellow-400/[0.1] dark:active:text-yellow-400;
+  @apply disabled:border-transparent disabled:bg-transparent disabled:text-yellow-500 dark:disabled:text-yellow-200;
 }
 
 .tw-button-yellow.tw-button-link {
-  @apply border-transparent bg-transparent text-yellow-500 hover:text-yellow-600 hover:underline active:text-yellow-700 disabled:border-transparent disabled:bg-transparent disabled:text-yellow-500 disabled:no-underline;
+  @apply border-transparent bg-transparent text-yellow-500 dark:text-yellow-200;
+  @apply hover:text-yellow-600 hover:underline dark:hover:text-yellow-300;
+  @apply active:text-yellow-700 dark:active:text-yellow-400;
+  @apply disabled:text-yellow-500 disabled:no-underline dark:disabled:text-yellow-200;
+  @apply focus-visible:underline;
 }
 
 /* green */
 
 .tw-button-green {
-  @apply border-green-500 bg-green-500 text-white hover:border-green-600 hover:bg-green-600 active:border-green-700 active:bg-green-700 disabled:border-green-500 disabled:bg-green-500;
+  @apply border-green-500 bg-green-500 text-white dark:border-green-200 dark:bg-green-200 dark:text-[#101010];
+  @apply hover:border-green-600 hover:bg-green-600 dark:hover:border-green-300 dark:hover:bg-green-300;
+  @apply active:border-green-700 active:bg-green-700 dark:active:border-green-400 dark:active:bg-green-400;
+  @apply disabled:border-green-500 disabled:bg-green-500 dark:disabled:border-green-200 dark:disabled:bg-green-200;
 }
 
 .tw-button-green.tw-button-outlined {
-  @apply bg-transparent text-green-500 hover:bg-green-100 hover:text-green-600 active:bg-green-200 active:text-green-700 disabled:bg-transparent disabled:text-green-500;
+  @apply bg-transparent text-green-500 dark:text-green-200;
+  @apply hover:bg-green-100 hover:text-green-600 dark:hover:bg-green-300/[0.1] dark:hover:text-green-300;
+  @apply active:bg-green-200 active:text-green-700 dark:active:bg-green-400/[0.1] dark:active:text-green-400;
+  @apply disabled:bg-transparent disabled:text-green-500 dark:disabled:text-green-200;
 }
 
 .tw-button-green.tw-button-text {
-  @apply border-transparent bg-transparent text-green-500 hover:border-green-100 hover:bg-green-100 hover:text-green-600 active:border-green-200 active:bg-green-200 active:text-green-700 disabled:border-transparent disabled:bg-transparent disabled:text-green-500;
+  @apply border-transparent bg-transparent text-green-500 dark:text-green-200;
+  @apply hover:border-green-100 hover:bg-green-100 hover:text-green-600 dark:hover:border-green-300/[0.1] dark:hover:bg-green-300/[0.1] dark:hover:text-green-300;
+  @apply active:border-green-200 active:bg-green-200 active:text-green-700 dark:active:border-green-400/[0.1] dark:active:bg-green-400/[0.1] dark:active:text-green-400;
+  @apply disabled:border-transparent disabled:bg-transparent disabled:text-green-500 dark:disabled:text-green-200;
 }
 
 .tw-button-green.tw-button-link {
-  @apply border-transparent bg-transparent text-green-500 hover:text-green-600 hover:underline active:text-green-700 disabled:border-transparent disabled:bg-transparent disabled:text-green-500 disabled:no-underline;
+  @apply border-transparent bg-transparent text-green-500 dark:text-green-200;
+  @apply hover:text-green-600 hover:underline dark:hover:text-green-300;
+  @apply active:text-green-700 dark:active:text-green-400;
+  @apply disabled:text-green-500 disabled:no-underline dark:disabled:text-green-200;
+  @apply focus-visible:underline;
 }
 
 /* slate */
 
 .tw-button-slate {
-  @apply border-slate-500 bg-slate-500 text-white hover:border-slate-600 hover:bg-slate-600 active:border-slate-700 active:bg-slate-700 disabled:border-slate-500 disabled:bg-slate-500;
+  @apply border-slate-500 bg-slate-500 text-white dark:border-slate-200 dark:bg-slate-200 dark:text-[#101010];
+  @apply hover:border-slate-600 hover:bg-slate-600 dark:hover:border-slate-300 dark:hover:bg-slate-300;
+  @apply active:border-slate-700 active:bg-slate-700 dark:active:border-slate-400 dark:active:bg-slate-400;
+  @apply disabled:border-slate-500 disabled:bg-slate-500 dark:disabled:border-slate-200 dark:disabled:bg-slate-200;
 }
 
 .tw-button-slate.tw-button-outlined {
-  @apply bg-transparent text-slate-500 hover:bg-slate-100 hover:text-slate-600 active:bg-slate-200 active:text-slate-700 disabled:bg-transparent disabled:text-slate-500;
+  @apply bg-transparent text-slate-500 dark:text-slate-200;
+  @apply hover:bg-slate-100 hover:text-slate-600 dark:hover:bg-slate-300/[0.1] dark:hover:text-slate-300;
+  @apply active:bg-slate-200 active:text-slate-700 dark:active:bg-slate-400/[0.1] dark:active:text-slate-400;
+  @apply disabled:bg-transparent disabled:text-slate-500 dark:disabled:text-slate-200;
 }
 
 .tw-button-slate.tw-button-text {
-  @apply border-transparent bg-transparent text-slate-500 hover:border-slate-100 hover:bg-slate-100 hover:text-slate-600 active:border-slate-200 active:bg-slate-200 active:text-slate-700 disabled:border-transparent disabled:bg-transparent disabled:text-slate-500;
+  @apply border-transparent bg-transparent text-slate-500 dark:text-slate-200;
+  @apply hover:border-slate-100 hover:bg-slate-100 hover:text-slate-600 dark:hover:border-slate-300/[0.1] dark:hover:bg-slate-300/[0.1] dark:hover:text-slate-300;
+  @apply active:border-slate-200 active:bg-slate-200 active:text-slate-700 dark:active:border-slate-400/[0.1] dark:active:bg-slate-400/[0.1] dark:active:text-slate-400;
+  @apply disabled:border-transparent disabled:bg-transparent disabled:text-slate-500 dark:disabled:text-slate-200;
 }
 
 .tw-button-slate.tw-button-link {
-  @apply border-transparent bg-transparent text-slate-500 hover:text-slate-600 hover:underline active:text-slate-700 disabled:border-transparent disabled:bg-transparent disabled:text-slate-500 disabled:no-underline;
+  @apply border-transparent bg-transparent text-slate-500 dark:text-slate-200;
+  @apply hover:text-slate-600 hover:underline dark:hover:text-slate-300;
+  @apply active:text-slate-700 dark:active:text-slate-400;
+  @apply disabled:text-slate-500 disabled:no-underline dark:disabled:text-slate-200;
+  @apply focus-visible:underline;
 }
 
 /* teal */
 
 .tw-button-teal {
-  @apply border-teal-500 bg-teal-500 text-white hover:border-teal-600 hover:bg-teal-600 active:border-teal-700 active:bg-teal-700 disabled:border-teal-500 disabled:bg-teal-500;
+  @apply border-teal-500 bg-teal-500 text-white dark:border-teal-200 dark:bg-teal-200 dark:text-[#101010];
+  @apply hover:border-teal-600 hover:bg-teal-600 dark:hover:border-teal-300 dark:hover:bg-teal-300;
+  @apply active:border-teal-700 active:bg-teal-700 dark:active:border-teal-400 dark:active:bg-teal-400;
+  @apply disabled:border-teal-500 disabled:bg-teal-500 dark:disabled:border-teal-200 dark:disabled:bg-teal-200;
 }
 
 .tw-button-teal.tw-button-outlined {
-  @apply bg-transparent text-teal-500 hover:bg-teal-100 hover:text-teal-600 active:bg-teal-200 active:text-teal-700 disabled:bg-transparent disabled:text-teal-500;
+  @apply bg-transparent text-teal-500 dark:text-teal-200;
+  @apply hover:bg-teal-100 hover:text-teal-600 dark:hover:bg-teal-300/[0.1] dark:hover:text-teal-300;
+  @apply active:bg-teal-200 active:text-teal-700 dark:active:bg-teal-400/[0.1] dark:active:text-teal-400;
+  @apply disabled:bg-transparent disabled:text-teal-500 dark:disabled:text-teal-200;
 }
 
 .tw-button-teal.tw-button-text {
-  @apply border-transparent bg-transparent text-teal-500 hover:border-teal-100 hover:bg-teal-100 hover:text-teal-600 active:border-teal-200 active:bg-teal-200 active:text-teal-700 disabled:border-transparent disabled:bg-transparent disabled:text-teal-500;
+  @apply border-transparent bg-transparent text-teal-500 dark:text-teal-200;
+  @apply hover:border-teal-100 hover:bg-teal-100 hover:text-teal-600 dark:hover:border-teal-300/[0.1] dark:hover:bg-teal-300/[0.1] dark:hover:text-teal-300;
+  @apply active:border-teal-200 active:bg-teal-200 active:text-teal-700 dark:active:border-teal-400/[0.1] dark:active:bg-teal-400/[0.1] dark:active:text-teal-400;
+  @apply disabled:border-transparent disabled:bg-transparent disabled:text-teal-500 dark:disabled:text-teal-200;
 }
 
 .tw-button-teal.tw-button-link {
-  @apply border-transparent bg-transparent text-teal-500 hover:text-teal-600 hover:underline active:text-teal-700 disabled:border-transparent disabled:bg-transparent disabled:text-teal-500 disabled:no-underline;
+  @apply border-transparent bg-transparent text-teal-500 dark:text-teal-200;
+  @apply hover:text-teal-600 hover:underline dark:hover:text-teal-300;
+  @apply active:text-teal-700 dark:active:text-teal-400;
+  @apply disabled:text-teal-500 disabled:no-underline dark:disabled:text-teal-200;
+  @apply focus-visible:underline;
 }
 
 /* sky */
 
 .tw-button-sky {
-  @apply border-sky-500 bg-sky-500 text-white hover:border-sky-600 hover:bg-sky-600 active:border-sky-700 active:bg-sky-700 disabled:border-sky-500 disabled:bg-sky-500;
+  @apply border-sky-500 bg-sky-500 text-white dark:border-sky-200 dark:bg-sky-200 dark:text-[#101010];
+  @apply hover:border-sky-600 hover:bg-sky-600 dark:hover:border-sky-300 dark:hover:bg-sky-300;
+  @apply active:border-sky-700 active:bg-sky-700 dark:active:border-sky-400 dark:active:bg-sky-400;
+  @apply disabled:border-sky-500 disabled:bg-sky-500 dark:disabled:border-sky-200 dark:disabled:bg-sky-200;
 }
 
 .tw-button-sky.tw-button-outlined {
-  @apply bg-transparent text-sky-500 hover:bg-sky-100 hover:text-sky-600 active:bg-sky-200 active:text-sky-700 disabled:bg-transparent disabled:text-sky-500;
+  @apply bg-transparent text-sky-500 dark:text-sky-200;
+  @apply hover:bg-sky-100 hover:text-sky-600 dark:hover:bg-sky-300/[0.1] dark:hover:text-sky-300;
+  @apply active:bg-sky-200 active:text-sky-700 dark:active:bg-sky-400/[0.1] dark:active:text-sky-400;
+  @apply disabled:bg-transparent disabled:text-sky-500 dark:disabled:text-sky-200;
 }
 
 .tw-button-sky.tw-button-text {
-  @apply border-transparent bg-transparent text-sky-500 hover:border-sky-100 hover:bg-sky-100 hover:text-sky-600 active:border-sky-200 active:bg-sky-200 active:text-sky-700 disabled:border-transparent disabled:bg-transparent disabled:text-sky-500;
+  @apply border-transparent bg-transparent text-sky-500 dark:text-sky-200;
+  @apply hover:border-sky-100 hover:bg-sky-100 hover:text-sky-600 dark:hover:border-sky-300/[0.1] dark:hover:bg-sky-300/[0.1] dark:hover:text-sky-300;
+  @apply active:border-sky-200 active:bg-sky-200 active:text-sky-700 dark:active:border-sky-400/[0.1] dark:active:bg-sky-400/[0.1] dark:active:text-sky-400;
+  @apply disabled:border-transparent disabled:bg-transparent disabled:text-sky-500 dark:disabled:text-sky-200;
 }
 
 .tw-button-sky.tw-button-link {
-  @apply border-transparent bg-transparent text-sky-500 hover:text-sky-600 hover:underline active:text-sky-700 disabled:border-transparent disabled:bg-transparent disabled:text-sky-500 disabled:no-underline;
+  @apply border-transparent bg-transparent text-sky-500 dark:text-sky-200;
+  @apply hover:text-sky-600 hover:underline dark:hover:text-sky-300;
+  @apply active:text-sky-700 dark:active:text-sky-400;
+  @apply disabled:text-sky-500 disabled:no-underline dark:disabled:text-sky-200;
+  @apply focus-visible:underline;
 }
 
 /* pink */
 
 .tw-button-pink {
-  @apply border-pink-500 bg-pink-500 text-white hover:border-pink-600 hover:bg-pink-600 active:border-pink-700 active:bg-pink-700 disabled:border-pink-500 disabled:bg-pink-500;
+  @apply border-pink-500 bg-pink-500 text-white dark:border-pink-200 dark:bg-pink-200 dark:text-[#101010];
+  @apply hover:border-pink-600 hover:bg-pink-600 dark:hover:border-pink-300 dark:hover:bg-pink-300;
+  @apply active:border-pink-700 active:bg-pink-700 dark:active:border-pink-400 dark:active:bg-pink-400;
+  @apply disabled:border-pink-500 disabled:bg-pink-500 dark:disabled:border-pink-200 dark:disabled:bg-pink-200;
 }
 
 .tw-button-pink.tw-button-outlined {
-  @apply bg-transparent text-pink-500 hover:bg-pink-100 hover:text-pink-600 active:bg-pink-200 active:text-pink-700 disabled:bg-transparent disabled:text-pink-500;
+  @apply bg-transparent text-pink-500 dark:text-pink-200;
+  @apply hover:bg-pink-100 hover:text-pink-600 dark:hover:bg-pink-300/[0.1] dark:hover:text-pink-300;
+  @apply active:bg-pink-200 active:text-pink-700 dark:active:bg-pink-400/[0.1] dark:active:text-pink-400;
+  @apply disabled:bg-transparent disabled:text-pink-500 dark:disabled:text-pink-200;
 }
 
 .tw-button-pink.tw-button-text {
-  @apply border-transparent bg-transparent text-pink-500 hover:border-pink-100 hover:bg-pink-100 hover:text-pink-600 active:border-pink-200 active:bg-pink-200 active:text-pink-700 disabled:border-transparent disabled:bg-transparent disabled:text-pink-500;
+  @apply border-transparent bg-transparent text-pink-500 dark:text-pink-200;
+  @apply hover:border-pink-100 hover:bg-pink-100 hover:text-pink-600 dark:hover:border-pink-300/[0.1] dark:hover:bg-pink-300/[0.1] dark:hover:text-pink-300;
+  @apply active:border-pink-200 active:bg-pink-200 active:text-pink-700 dark:active:border-pink-400/[0.1] dark:active:bg-pink-400/[0.1] dark:active:text-pink-400;
+  @apply disabled:border-transparent disabled:bg-transparent disabled:text-pink-500 dark:disabled:text-pink-200;
 }
 
 .tw-button-pink.tw-button-link {
-  @apply border-transparent bg-transparent text-pink-500 hover:text-pink-600 hover:underline active:text-pink-700 disabled:border-transparent disabled:bg-transparent disabled:text-pink-500 disabled:no-underline;
+  @apply border-transparent bg-transparent text-pink-500 dark:text-pink-200;
+  @apply hover:text-pink-600 hover:underline dark:hover:text-pink-300;
+  @apply active:text-pink-700 dark:active:text-pink-400;
+  @apply disabled:text-pink-500 disabled:no-underline dark:disabled:text-pink-200;
+  @apply focus-visible:underline;
 }
 
 /* gray */
 
 .tw-button-gray {
-  @apply border-gray-500 bg-gray-500 text-white hover:border-gray-600 hover:bg-gray-600 active:border-gray-700 active:bg-gray-700 disabled:border-gray-500 disabled:bg-gray-500;
-  @apply bg-gray-200 dark:border-gray-200;
+  @apply border-gray-500 bg-gray-500 text-white dark:border-gray-200 dark:bg-gray-200 dark:text-[#101010];
+  @apply hover:border-gray-600 hover:bg-gray-600 dark:hover:border-gray-300 dark:hover:bg-gray-300;
+  @apply active:border-gray-700 active:bg-gray-700 dark:active:border-gray-400 dark:active:bg-gray-400;
+  @apply disabled:border-gray-500 disabled:bg-gray-500 dark:disabled:border-gray-200 dark:disabled:bg-gray-200;
 }
 
 .tw-button-gray.tw-button-outlined {
-  @apply bg-transparent text-gray-500 hover:bg-gray-100 hover:text-gray-600 active:bg-gray-200 active:text-gray-700 disabled:bg-transparent disabled:text-gray-500 dark:hover:bg-gray-100/[.12];
+  @apply bg-transparent text-gray-500 dark:text-gray-200;
+  @apply hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-300/[0.1] dark:hover:text-gray-300;
+  @apply active:bg-gray-200 active:text-gray-700 dark:active:bg-gray-400/[0.1] dark:active:text-gray-400;
+  @apply disabled:bg-transparent disabled:text-gray-500 dark:disabled:text-gray-200;
 }
 
 .tw-button-gray.tw-button-text {
-  @apply border-transparent bg-transparent text-gray-500 hover:border-gray-100 hover:bg-gray-100 hover:text-gray-600 active:border-gray-200 active:bg-gray-200 active:text-gray-700 disabled:border-transparent disabled:bg-transparent disabled:text-gray-500;
+  @apply border-transparent bg-transparent text-gray-500 dark:text-gray-200;
+  @apply hover:border-gray-100 hover:bg-gray-100 hover:text-gray-600 dark:hover:border-gray-300/[0.1] dark:hover:bg-gray-300/[0.1] dark:hover:text-gray-300;
+  @apply active:border-gray-200 active:bg-gray-200 active:text-gray-700 dark:active:border-gray-400/[0.1] dark:active:bg-gray-400/[0.1] dark:active:text-gray-400;
+  @apply disabled:border-transparent disabled:bg-transparent disabled:text-gray-500 dark:disabled:text-gray-200;
 }
 
 .tw-button-gray.tw-button-link {
-  @apply border-transparent bg-transparent text-gray-500 hover:text-gray-600 hover:underline active:text-gray-700 disabled:border-transparent disabled:bg-transparent disabled:text-gray-500 disabled:no-underline;
+  @apply border-transparent bg-transparent text-gray-500 dark:text-gray-200;
+  @apply hover:text-gray-600 hover:underline dark:hover:text-gray-300;
+  @apply active:text-gray-700 dark:active:text-gray-400;
+  @apply disabled:text-gray-500 disabled:no-underline dark:disabled:text-gray-200;
+  @apply focus-visible:underline;
 }
